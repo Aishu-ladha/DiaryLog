@@ -2,8 +2,8 @@ const jwt = require('jsonwebtoken');
 
 function authenticateToken(req, res, next) {
     const accessToken = req.headers['authorization']?.split(' ')[1];
-    // console.log(accessToken);
-    // console.log("Auth Header:", req.headers['authorization']);
+    console.log(accessToken);
+    console.log("Auth Header:", req.headers['authorization']);
 
     if (!accessToken) return res.sendStatus(401); // Unauthorized
 

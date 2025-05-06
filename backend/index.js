@@ -23,7 +23,7 @@ app.use(express.json());
 // connectDB();
 
 app.use(cors({
-    origin: '*', // Allow all origins (or specify exact URL instead of '*')
+    origin: 'http://localhost:5174', // Allow all origins (or specify exact URL instead of '*')
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
   }));
