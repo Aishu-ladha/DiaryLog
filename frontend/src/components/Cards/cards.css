@@ -1,0 +1,11 @@
+.content-overflow {
+    overflow: hidden;           /* Hide content that overflows */
+    text-overflow: ellipsis;    /* Add ellipsis (...) at the end */
+    white-space: nowrap;        /* Prevents text from wrapping into multiple lines */
+  }
+  
+  /* Scrollable Content */
+  .content-overflow-scrollable {
+    max-height: 100px;          /* Set a max height for the content */
+    overflow-y: auto;           /* Allow vertical scrolling */
+  }
