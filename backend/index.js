@@ -23,8 +23,10 @@ app.use(express.json());
 // connectDB();
 
 app.use(cors({
-    origin:"*",
-}));
+    origin: '*', // Allow all origins (or specify exact URL instead of '*')
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true
+  }));
 app.get('/', (req, res) => {
     res.json({ message: 'Welcome to the Diary API' });
 });
